@@ -4,14 +4,62 @@
     <title>Church Music</title>
     <meta charset="utf-8">
     <style>
+      body{
+        margin:0;
+      }
       h1 {
         font-size:45px;
         text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+      }
+      ol{
+        text-align: center;
+        border-right:1px solid gray;
+        width:90px;
+        margin:0;
+        padding:20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol{
+        padding-left:25px;
+      }
+      #grid #article{
+        padding-left:15px;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+        ol{
+          border-right:none;
+        }
+        h1 {
+          border-bottom:none;
+        }
       }
     </style>
-    </head>
+  </head>
   <body>
-    <h1>교회 음악 목록</h1>
+    <h1><a href="index.html">교회 음악 목록</a></h1>
+    <div id="grid">
+    <ol>
+      <li><a href="2010.html">2010년</a></li>
+      <li><a href="2011.html">2011년</a></li>
+      <li><a href="2012.html">2012년</a></li>
+      <li><a href="2013.html">2013년</a></li>
+      <li><a href="2014.html">2014년</a></li>
+      <li><a href="2015.html">2015년</a></li>
+      <li><a href="2016.html">2016년</a></li>
+      <li><a href="2017.html">2017년</a></li>
+    </ol>
+    <div id="article">
+    <h2>소개</h2>
+    <p>
     No 제목 작곡편곡 악보집 순서 출판사 부른날짜 부른찬양 찬양대 동영상좌표 파트연습좌표
     <br>
     18001	아침에밝아오는기쁨	Camp Kirkland	빛나라성가19집	01	빛나라출판사	01월 07일	브니엘	https://youtu.be/9ysCsIu5qw4	-
@@ -162,6 +210,9 @@
     18073	내가산을향하여	신상우	중앙성가33집	15	중앙아트	06월 17일	시온	https://youtu.be/mhZ7uxLAWaw	-
     <br>
     18074	감사함으로주앞에나오라	Lloyd Larson	중앙성가28집	26	중앙아트	06월 24일	시온	https://youtu.be/suKpw3cneh4	-
-    <br>
+
+    </p>
+  </div>
+</div>
       </body>
 </html>
